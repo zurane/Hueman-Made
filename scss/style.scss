@@ -16,8 +16,9 @@ header {
       border-bottom: 0.01px solid rgb(51, 51, 51);
     }
     nav ul {
-      display: flex;
+      display: inline-flex;
       justify-content: flex-start;
+      align-items: center;
     }
     nav a {
       text-decoration: none;
