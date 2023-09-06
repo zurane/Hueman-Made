@@ -2,6 +2,7 @@ body {
   background-color: greenyellow;
   font-family: "RX100", sans-serif;
   margin: 20px;
+  overflow: hidden;
 }
 
 header {
@@ -13,7 +14,7 @@ header {
 .container .main__wrapper .sidebar__navigation {
   display: flex;
   justify-content: center;
-  border-bottom: 0.01px solid rgb(51, 51, 51);
+  border-bottom: 0.01px solid rgb(88, 88, 88);
 }
 .container .main__wrapper nav ul {
   display: inline-flex;
@@ -27,10 +28,29 @@ header {
 }
 .container .main__wrapper nav ul li {
   list-style: none;
-  padding: 15px 10px;
+  padding: 10px 10px;
   font-size: 16px;
   font-family: "Switzer", sans-serif;
   font-weight: normal;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 1950px;
+}
+.dropdown .dropdown-content .dropdown-content a {
+  text-decoration: none;
+  display: block;
+  color: #333;
+}
+.dropdown .dropdown-content .dropdown-content a:hover {
+  background-color: #ddd;
 }
 
 .hero__container .hero__content {
