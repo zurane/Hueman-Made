@@ -37,19 +37,31 @@ header {
 .dropdown {
   position: relative;
   display: inline-block;
-  text-align: center;
 }
-.dropdown .dropdown-content {
+
+.dropdown-btn {
+  font-family: "Switzer", sans-serif;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
   display: none;
   position: absolute;
-  min-width: 1950px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
-.dropdown .dropdown-content .dropdown-content a {
+
+.dropdown-content a {
+  padding: 12px 16px;
   text-decoration: none;
   display: block;
   color: #333;
 }
-.dropdown .dropdown-content .dropdown-content a:hover {
+
+.dropdown-content a:hover {
   background-color: #ddd;
 }
 
@@ -63,10 +75,8 @@ header {
   color: rgb(255, 255, 255);
   background-color: black;
   text-decoration: none;
-  padding: 12px 25px;
-  gap: 10px;
+  padding: 0px 25px;
 }
 .hero__container .hero__content h1 {
   font-size: 250px;
-  line-height: 190px;
 }/*# sourceMappingURL=style.css.map */
