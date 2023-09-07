@@ -21,8 +21,13 @@ header {
 .container .main__wrapper nav a {
   text-decoration: none;
   color: black;
-  display: inline-block;
+}
+.container .main__wrapper nav ul li a {
+  display: flex;
   align-items: center;
+}
+.container .main__wrapper nav ul li a .material-symbols-outlined {
+  font-size: 15px;
 }
 .container .main__wrapper nav ul li {
   list-style: none;
