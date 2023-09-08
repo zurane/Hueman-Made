@@ -2,7 +2,7 @@ body {
   background-color: #0f574e;
   font-family: "RX100", sans-serif;
   margin: 20px;
-  overflow: hidden;
+  // overflow-x: hidden;
 }
 
 header {
@@ -21,7 +21,6 @@ header {
       background-color: rgb(253, 253, 253);
       justify-content: space-between;
       padding: 0px 88px;
-      margin: auto;
     }
 
     nav ul {
@@ -134,5 +133,26 @@ header {
       font-size: 16px;
       font-weight: 100;
     }
+  }
+}
+
+// New sections
+
+.categories {
+  margin: 18px 0px;
+  display: flex;
+  justify-content: space-around;
+  .card {
+    padding: 0px 10px;
+  }
+  .card img {
+    border-radius: 5px;
+  }
+
+  .card-title {
+    position: relative;
+    bottom: 50px;
+    margin-bottom: 0px;
+    padding: 0px 15px 0px  15px;
   }
 }
