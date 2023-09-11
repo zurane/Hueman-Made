@@ -1,12 +1,12 @@
 body {
-  background-color: #0f574e;
+  background-color: #f3f2f2;
   font-family: "RX100", sans-serif;
   margin: 20px;
+  
   // overflow-x: hidden;
 }
 
 header {
-  border-radius: 20px;
   height: 95vh;
   background-image: url(/assets/skate.png);
   background-repeat: no-repeat;
@@ -140,19 +140,31 @@ header {
 
 .categories {
   margin: 18px 0px;
-  display: flex;
-  justify-content: space-around;
-  .card {
-    padding: 0px 10px;
-  }
-  .card img {
-    border-radius: 5px;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 
   .card-title {
     position: relative;
     bottom: 50px;
     margin-bottom: 0px;
-    padding: 0px 15px 0px  15px;
+    padding: 0px 15px 0px 15px;
+  }
+
+  .card img {
+
+    filter: saturate(0%);
+    transition: 6ms ease-in-out;
+  }
+
+  .card img:hover{
+    cursor: pointer;
+    filter:none;
+  }
+  .card-title h3 {
+    color: white;
+    font-weight: normal;
+    font-family: "Switzer", sans-serif;
+    font-size: 15px;
   }
 }

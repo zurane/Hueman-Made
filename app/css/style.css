@@ -1,12 +1,10 @@
 body {
-  background-color: greenyellow;
   font-family: "RX100", sans-serif;
   margin: 20px;
 }
 
 header {
   background-color: rgba(255, 255, 255, 0.6705882353);
-  border-radius: 20px;
   height: 95vh;
 }
 
