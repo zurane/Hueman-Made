@@ -1,8 +1,9 @@
 body {
-  background-color: #f3f2f2;
+  background-color: #f3f3f3;
   font-family: "RX100", sans-serif;
   margin: 20px;
-  
+  scroll-behavior: smooth;
+
   // overflow-x: hidden;
 }
 
@@ -146,25 +147,34 @@ header {
 
   .card-title {
     position: relative;
-    bottom: 50px;
+    bottom: 60px;
     margin-bottom: 0px;
     padding: 0px 15px 0px 15px;
+    border: 0.25px solid transparent;
+    background: black;
   }
 
   .card img {
-
     filter: saturate(0%);
     transition: 6ms ease-in-out;
   }
 
-  .card img:hover{
+  .card img:hover {
     cursor: pointer;
-    filter:none;
+    filter: none;
   }
   .card-title h3 {
     color: white;
     font-weight: normal;
     font-family: "Switzer", sans-serif;
-    font-size: 15px;
+    font-size: 16px;
   }
+}
+
+// Promotional Banners styles
+
+.promotional-banners {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
 }
