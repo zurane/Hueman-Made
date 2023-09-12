@@ -118,7 +118,7 @@ header {
   margin: 18px 0px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 5px;
 }
 .categories .card-title {
   position: relative;
