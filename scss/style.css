@@ -122,11 +122,10 @@ header {
 }
 .categories .card-title {
   position: relative;
-  bottom: 60px;
+  bottom: 300px;
   margin-bottom: 0px;
   padding: 0px 15px 0px 15px;
-  border: 0.25px solid transparent;
-  background: black;
+  text-align: center;
 }
 .categories .card img {
   filter: saturate(0%);
@@ -138,9 +137,9 @@ header {
 }
 .categories .card-title h3 {
   color: white;
-  font-weight: normal;
-  font-family: "Switzer", sans-serif;
-  font-size: 16px;
+  font-weight: bold;
+  font-size: 70px;
+  text-transform: uppercase;
 }
 
 .promotional-banners {
