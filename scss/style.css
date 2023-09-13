@@ -1,12 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f0edee;
   font-family: "RX100", sans-serif;
   margin: 20px;
-  scroll-behavior: smooth;
 }
 
 header {
-  height: 95vh;
+  height: 100vh;
   background-image: url(/assets/skate.png);
   background-repeat: no-repeat;
   background-position: right;
@@ -117,33 +120,31 @@ header {
 .categories {
   margin: 18px 0px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 5px;
+  grid-auto-flow: column;
 }
 .categories .card-title {
   position: relative;
-  bottom: 300px;
+  bottom: 70px;
   margin-bottom: 0px;
   padding: 0px 15px 0px 15px;
-  text-align: center;
+  text-align: left;
+  border-top: 1px solid white;
 }
-.categories .card img {
-  filter: saturate(0%);
-  transition: 6ms ease-in-out;
-}
-.categories .card img:hover {
+.categories .card {
+  height: 65vh;
   cursor: pointer;
-  filter: none;
 }
 .categories .card-title h3 {
   color: white;
   font-weight: bold;
-  font-size: 70px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
 .promotional-banners {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4px;
 }/*# sourceMappingURL=style.css.map */
