@@ -6,6 +6,7 @@ body {
   background-color: #f0edee;
   font-family: "RX100", sans-serif;
   margin: 20px;
+  overflow-x: hidden;
 }
 
 header {
@@ -53,16 +54,17 @@ header {
   padding: 25px;
   font-family: "Switzer", sans-serif;
 }
-.container .main__wrapper .action-links a {
-  padding: 1px 25px;
+.container .main__wrapper .action-links button {
+  padding: 5px 25px;
   align-items: right;
   text-decoration: none;
   color: black;
   font-weight: 500;
   border: 1px solid black;
   float: right;
+  cursor: pointer;
 }
-.container .main__wrapper .action-links a:nth-child(2) {
+.container .main__wrapper .action-links button:nth-child(2) {
   background-color: black;
   color: #ffffff;
 }
@@ -133,7 +135,7 @@ header {
   border-top: 1px solid white;
 }
 .categories .card {
-  height: 65vh;
+  height: 62vh;
   cursor: pointer;
 }
 .categories .card-title h3 {
@@ -147,4 +149,57 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4px;
+}
+
+.wrapper .material-symbols-outlined {
+  background: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.wrapper .material-symbols-outlined:first-child {
+  left: -23px;
+}
+
+.wrapper .material-symbols-outlined:last-child {
+  right: -23px;
+}
+
+.wrapper {
+  max-width: 1900px;
+  position: relative;
+}
+
+.wrapper .carousel {
+  white-space: nowrap;
+  cursor: pointer;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel img {
+  height: 400px;
+  width: 33.3333333333%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 14px;
+}
+
+.carousel img:first-child {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

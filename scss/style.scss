@@ -6,6 +6,7 @@ body {
   background-color: #f0edee;
   font-family: "RX100", sans-serif;
   margin: 20px;
+  overflow-x: hidden;
 }
 
 header {
@@ -63,16 +64,17 @@ header {
       font-family: "Switzer", sans-serif;
     }
 
-    .action-links a {
-      padding: 1px 25px;
+    .action-links button {
+      padding: 5px 25px;
       align-items: right;
       text-decoration: none;
       color: black;
       font-weight: 500;
       border: 1px solid black;
       float: right;
+      cursor: pointer;
     }
-    .action-links a:nth-child(2) {
+    .action-links button:nth-child(2) {
       background-color: black;
       color: #ffffff;
     }
@@ -158,7 +160,7 @@ header {
   }
 
   .card {
-    height: 65vh;
+    height: 62vh;
     cursor: pointer;
   }
 
@@ -176,4 +178,69 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4px;
+}
+
+// Carousel section styles
+
+.wrapper .material-symbols-outlined {
+  background: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.wrapper .material-symbols-outlined:first-child {
+  left: -23px;
+}
+
+.wrapper .material-symbols-outlined:last-child {
+  right: -23px;
+}
+
+.wrapper {
+  max-width: 1900px;
+  position: relative;
+}
+.wrapper .carousel {
+  white-space: nowrap;
+  cursor: pointer;
+  // font-size: 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel img {
+  height: 400px;
+  width: calc(100% / 3);
+  object-fit: cover;
+  margin-left: 14px;
+}
+
+.carousel  img:first-child {
+  margin-left: 0;
+}
+
+
+@media screen and (max-width: 900px) {
+
+
+  .carousel img {
+
+    width: calc(100%/2);
+  }
+  
+}
+
+
+@media screen and (max-width: 550px) {
+
+
+  .carousel  img {
+
+    width: 100%;
+  }
+  
 }
