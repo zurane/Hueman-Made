@@ -3,17 +3,18 @@ html {
 }
 
 body {
-  background-color: #f0edee;
+  background-color: #ffffff;
   font-family: "RX100", sans-serif;
-  margin: 20px;
+  margin: 15px 20px;
   overflow-x: hidden;
 }
 
 header {
   height: 100vh;
-  background-image: url(/assets/skate.png);
+  background-image: url(/assets/Late\ Summer\ Hoops.jpg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: left;
+  background-size: cover;
 }
 
 .container {
@@ -83,9 +84,9 @@ header {
 
 .dropdown {
   position: relative;
-  background-color: rgb(253, 253, 253);
+  // background-color: rgb(253, 253, 253);
   height: 8vh;
-  box-shadow: 0px 0px 0px 0.1px rgb(148, 148, 148);
+  // box-shadow: 0px 0px 0px 0.1px rgb(148, 148, 148);
 
   .dropdown-content {
     display: none;
@@ -114,6 +115,7 @@ header {
   .hero__content {
     float: left;
     margin: auto;
+    padding-top: 200px;
   }
 
   .hero__content a {
@@ -126,8 +128,9 @@ header {
   }
 
   .hero__content h2 {
-    font-size: 150px;
-    line-height: 120px;
+    font-size: 120px;
+    line-height: 100px;
+    color: #fcfcfc;
   }
   .hero__content a {
     display: inline-flex;
@@ -146,29 +149,30 @@ header {
   margin: 18px 0px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 5px;
+  gap: 15px;
   grid-auto-flow: column;
 
   .card-title {
     position: relative;
-    bottom: 70px;
+    bottom: 85px;
     margin-bottom: 0px;
     padding: 0px 15px 0px 15px;
     text-align: left;
-
-    border-top: 1px solid white;
+    border-top: 1px solid rgba(255, 255, 255, 0.774);
   }
 
   .card {
-    height: 62vh;
+    height: 80vh;
     cursor: pointer;
+    overflow: hidden;
+    margin: 0 auto;
   }
 
   .card-title h3 {
     color: white;
     font-weight: bold;
     font-size: 16px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
   }
 }
 
@@ -180,6 +184,7 @@ header {
   grid-gap: 4px;
 }
 
+
 // Carousel section styles
 
 .wrapper .material-symbols-outlined {
@@ -188,16 +193,17 @@ header {
   top: 50%;
   transform: translateY(-50%);
   border-radius: 50%;
-  font-size: 50px;
+  font-size: 40px;
+  font-weight: 300;
   cursor: pointer;
 }
 
 .wrapper .material-symbols-outlined:first-child {
-  left: -23px;
+  left: -10px;
 }
 
 .wrapper .material-symbols-outlined:last-child {
-  right: -23px;
+  right: -10px;
 }
 
 .wrapper {
@@ -207,13 +213,13 @@ header {
 .wrapper .carousel {
   white-space: nowrap;
   cursor: pointer;
-  // font-size: 0;
+  font-size: 0;
   overflow: hidden;
   scroll-behavior: smooth;
 }
 
 .carousel img {
-  height: 400px;
+  height: 600px;
   width: calc(100% / 3);
   object-fit: cover;
   margin-left: 14px;
