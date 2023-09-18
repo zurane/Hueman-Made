@@ -5,7 +5,7 @@ html {
 body {
   background-color: #ffffff;
   font-family: "RX100", sans-serif;
-  margin: 15px 20px;
+  margin: 15px 30px;
   overflow-x: hidden;
 }
 
@@ -119,7 +119,7 @@ header {
   }
 
   .hero__content a {
-    font-size: 14px;
+    font-size: 15px;
     border: 1px solid black;
     font-family: "Switzer", sans-serif;
     color: rgb(255, 255, 255);
@@ -127,19 +127,16 @@ header {
     padding: 5px 25px;
   }
 
-  .hero__content h2 {
+  .hero__content span {
     font-size: 120px;
+    font-weight: 700;
     line-height: 100px;
     color: #fcfcfc;
   }
   .hero__content a {
     display: inline-flex;
     align-items: center;
-
-    .hero__content .material-symbols-outlined {
-      font-size: 16px;
-      font-weight: 100;
-    }
+    margin-top: 40px;
   }
 }
 
@@ -154,25 +151,25 @@ header {
 
   .card-title {
     position: relative;
-    bottom: 85px;
+    bottom: 80px;
     margin-bottom: 0px;
     padding: 0px 15px 0px 15px;
     text-align: left;
-    border-top: 1px solid rgba(255, 255, 255, 0.774);
   }
 
   .card {
     height: 80vh;
     cursor: pointer;
-    overflow: hidden;
+    overflow-y: hidden;
     margin: 0 auto;
   }
 
   .card-title h3 {
-    color: white;
+    color: rgb(31, 29, 29);
     font-weight: bold;
-    font-size: 16px;
-    text-transform: uppercase; 
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "Switzer", sans-serif;
   }
 }
 
@@ -183,7 +180,6 @@ header {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4px;
 }
-
 
 // Carousel section styles
 
@@ -206,6 +202,16 @@ header {
   right: -10px;
 }
 
+.slider-section {
+  margin-top: 50px;
+  padding: 15px;
+  background-color: rgb(250, 250, 250);
+}
+
+.slider-section h2 {
+  font-family: "Switzer", sans-serif;
+  font-weight: 400;
+}
 .wrapper {
   max-width: 1900px;
   position: relative;
@@ -219,34 +225,27 @@ header {
 }
 
 .carousel img {
-  height: 600px;
-  width: calc(100% / 3);
+  height: 400px;
+  width: calc(85% / 3);
   object-fit: cover;
   margin-left: 14px;
+  -webkit-box-shadow: 2px 2px 24px -19px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 2px 2px 24px -19px rgba(66, 68, 90, 1);
+  box-shadow: 2px 2px 24px -19px rgba(66, 68, 90, 1);
 }
 
-.carousel  img:first-child {
+.carousel img:first-child {
   margin-left: 0;
 }
 
-
 @media screen and (max-width: 900px) {
-
-
   .carousel img {
-
-    width: calc(100%/2);
+    width: calc(100% / 2);
   }
-  
 }
 
-
 @media screen and (max-width: 550px) {
-
-
-  .carousel  img {
-
+  .carousel img {
     width: 100%;
   }
-  
 }
