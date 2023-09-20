@@ -139,7 +139,7 @@ header {
   margin: 0 auto;
 }
 .categories .card-title h3 {
-  color: rgb(31, 29, 29);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
@@ -148,8 +148,13 @@ header {
 
 .promotional-banners {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.banners h3 {
+  font-family: "Switzer", sans-serif;
+  font-weight: 400;
 }
 
 .wrapper .material-symbols-outlined {
@@ -172,9 +177,10 @@ header {
 }
 
 .slider-section {
-  margin-top: 50px;
-  padding: 15px;
-  background-color: rgb(250, 250, 250);
+  margin: 45px 0px;
+  padding: 10px 0px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
 }
 
 .slider-section h2 {
@@ -196,8 +202,8 @@ header {
 }
 
 .carousel img {
-  height: 400px;
-  width: 28.3333333333%;
+  height: 600px;
+  width: 33.3333333333%;
   -o-object-fit: cover;
      object-fit: cover;
   margin-left: 14px;
