@@ -34,6 +34,10 @@ icons.forEach((icon) => {
 });
 
 
+
+
+
+
 // Carousel section script 
 
 let isDragStart = false, prevPageX, prevScrollleft;
