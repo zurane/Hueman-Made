@@ -223,4 +223,8 @@ header {
   .carousel img {
     width: 100%;
   }
+}
+.login_wrapper {
+  max-width: 1960px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
