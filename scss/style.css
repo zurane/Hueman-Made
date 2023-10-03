@@ -228,11 +228,15 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  top: 50%;
 }
 .login_wrapper .login_container input {
   padding: 12px 10px;
   width: 300px;
   margin: 6px 0px;
+}
+.login_wrapper *:focus {
+  outline: none;
 }
 
 label {
@@ -242,17 +246,17 @@ label {
   font-family: "Switzer", sans-serif;
 }
 
-.login_container button,
-h3 {
+.login_container h3 {
   font-family: "Switzer", sans-serif;
-  text-align: center;
+  text-align: left;
+  font-size: 25px;
 }
 
 .form-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .form-btn button {
   width: 100%;
@@ -269,8 +273,9 @@ h3 {
   text-align: center;
   justify-content: right;
   font-family: "Switzer", sans-serif;
+  padding-top: 6px;
 }
 .forgot-password-btn a {
   font-size: 13px;
-  color: rgb(0, 132, 255);
+  color: #1077da;
 }/*# sourceMappingURL=style.css.map */

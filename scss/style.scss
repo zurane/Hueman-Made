@@ -1,3 +1,8 @@
+// Styles variables
+// This is better practise if your stylesheet ever gets too long and allows you to easily define and impliment styling to match your brand
+$forgot-password-color: #1077da;
+// end of styling variables
+
 html {
   scroll-behavior: smooth;
 }
@@ -261,11 +266,15 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  top: 50%;
 
   .login_container input {
     padding: 12px 10px;
     width: 300px;
     margin: 6px 0px;
+  }
+  *:focus {
+    outline: none;
   }
 }
 
@@ -276,17 +285,17 @@ label {
   font-family: "Switzer", sans-serif;
 }
 
-.login_container button,
-h3 {
+.login_container h3 {
   font-family: "Switzer", sans-serif;
-  text-align: center;
+  text-align: left;
+  font-size: 25px;
 }
 
 .form-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 15px;
 
   button {
     width: 100%;
@@ -298,16 +307,16 @@ h3 {
   }
 }
 
-.forgot-password-btn  {
+.forgot-password-btn {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: right;
   font-family: "Switzer", sans-serif;
-  
-  a {
+  padding-top: 6px;
 
+  a {
     font-size: 13px;
-    color: rgb(0, 132, 255);
+    color: $forgot-password-color;
   }
 }
