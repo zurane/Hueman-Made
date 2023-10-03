@@ -225,6 +225,40 @@ header {
   }
 }
 .login_wrapper {
-  max-width: 1960px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.login_wrapper .login_container input {
+  padding: 12px 10px;
+  width: 300px;
+  margin: 6px 0px;
+}
+
+label {
+  margin: 25px auto;
+  padding: 10px 0px;
+  font-size: 14px;
+  font-family: "Switzer", sans-serif;
+}
+
+.login_container button,
+h3 {
+  font-family: "Switzer", sans-serif;
   text-align: center;
+}
+
+.form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.form-btn button {
+  width: 100%;
+  padding: 15px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
