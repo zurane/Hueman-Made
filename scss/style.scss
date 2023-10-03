@@ -298,4 +298,16 @@ h3 {
   }
 }
 
+.forgot-password-btn  {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: right;
+  font-family: "Switzer", sans-serif;
+  
+  a {
 
+    font-size: 13px;
+    color: rgb(0, 132, 255);
+  }
+}

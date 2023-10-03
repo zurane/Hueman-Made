@@ -261,4 +261,16 @@ h3 {
   color: white;
   border: none;
   cursor: pointer;
+}
+
+.forgot-password-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: right;
+  font-family: "Switzer", sans-serif;
+}
+.forgot-password-btn a {
+  font-size: 13px;
+  color: rgb(0, 132, 255);
 }/*# sourceMappingURL=style.css.map */
