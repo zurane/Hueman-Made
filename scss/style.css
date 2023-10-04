@@ -278,4 +278,19 @@ label {
 .forgot-password-btn a {
   font-size: 13px;
   color: #1077da;
+}
+
+.continue-using-text {
+  text-align: center;
+  font-family: "Switzer", sans-serif;
+  font-size: 14px;
+}
+
+.third-party-logins {
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

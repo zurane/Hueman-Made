@@ -320,3 +320,18 @@ label {
     color: $forgot-password-color;
   }
 }
+
+.continue-using-text {
+  text-align: center;
+  font-family: "Switzer", sans-serif;
+  font-size: 14px;
+}
+
+.third-party-logins {
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
