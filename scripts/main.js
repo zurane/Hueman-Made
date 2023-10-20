@@ -46,7 +46,7 @@ let firstImgWidth = firstImg.clientWidth + 14; // getting the first image and ad
 
 carouselArrows.forEach(icon => {
   icon.addEventListener('click', () => {
-    // this ternary function reduces the width of the first image when the left icon is clicked or otherwise add it.
+    // this ternary function reduces the width of the first image when the left icon is clicked or otherwise adds it.
         carousel.scrollLeft += icon.id === 'left' ? -firstImgWidth : firstImgWidth
     })
 })

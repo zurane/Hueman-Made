@@ -155,8 +155,8 @@ header {
   grid-auto-flow: column;
 
   .card-title {
-    position: relative;
-    bottom: 80px;
+    position: absolute;
+    bottom: 20px;
     margin-bottom: 0px;
     padding: 0px 15px 0px 15px;
     text-align: left;
@@ -167,6 +167,11 @@ header {
     cursor: pointer;
     overflow-y: hidden;
     margin: 0 auto;
+    position: relative;
+
+    :hover {
+      filter: saturate(0);
+    }
   }
 
   .card-title h3 {
@@ -188,6 +193,20 @@ header {
 .banners h3 {
   font-family: "Switzer", sans-serif;
   font-weight: 400;
+}
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.banner a {
+  position: absolute;
+  bottom: 15px;
+  left: 16px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Switzer", sans-serif;
 }
 
 // Carousel section styles
