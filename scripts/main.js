@@ -47,8 +47,8 @@ let firstImgWidth = firstImg.clientWidth + 14; // getting the first image and ad
 carouselArrows.forEach(icon => {
   icon.addEventListener('click', () => {
     // this ternary function reduces the width of the first image when the left icon is clicked or otherwise adds it.
-        carousel.scrollLeft += icon.id === 'left' ? -firstImgWidth : firstImgWidth
-    })
+    carousel.scrollLeft += icon.id === 'left' ? -firstImgWidth : firstImgWidth
+  })
 })
 
 const dragStart = (e) => {
@@ -74,3 +74,16 @@ const dragStop = () => {
 carousel.addEventListener('mousedown', dragStart)
 carousel.addEventListener('mousemove', dragging)
 carousel.addEventListener('mouseover', dragStop)
+
+
+// pop up
+
+function handleClik() {
+  const timeout = setTimeout(() => {
+    document.getElementById('root').innerHTML = 'You clicked on this'
+  }, 1000);
+
+  setTimeout(() => {
+    document.getElementById('root').innerHTML = null
+  }, 3000);
+}
