@@ -9,7 +9,7 @@ html {
 
 body {
   background-color: #ffffff;
-  font-family: "RX100", sans-serif;
+  font-family: "Switzer", sans-serif;
   margin: 15px 30px;
   overflow-x: hidden;
   .top-btn {
@@ -32,11 +32,11 @@ body {
 }
 
 header {
-  height: 100vh;
+  height: 80vh;
   background-image: url(/assets/Late\ Summer\ Hoops.jpg);
-  background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
   background-size: cover;
+  position: relative;
 }
 
 .container {
@@ -44,9 +44,10 @@ header {
     .sidebar__navigation {
       display: flex;
       justify-content: center;
+      align-items: center;
       background-color: rgb(253, 253, 253);
       justify-content: space-between;
-      padding: 0px 88px;
+      border-bottom: none;
     }
 
     nav ul {
@@ -94,7 +95,7 @@ header {
       color: black;
       font-weight: 500;
       border: 1px solid black;
-      float: right;
+      // float: right;
       cursor: pointer;
     }
     .action-links button:nth-child(2) {
@@ -134,44 +135,36 @@ header {
 }
 
 .hero__container {
+  left: 0px;
+  bottom: 50px;
+  position: absolute;
   .hero__content {
-    float: left;
-    margin: auto;
-    padding-top: 200px;
-  }
-
-  .hero__content a {
-    font-size: 15px;
-    border: 1px solid black;
-    font-family: "Switzer", sans-serif;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    padding: 5px 25px;
-  }
-
-  .hero__content span {
-    font-size: 120px;
-    font-weight: 700;
-    line-height: 100px;
-    color: #fcfcfc;
-  }
-  .hero__content a {
-    display: inline-flex;
-    align-items: center;
-    margin-top: 40px;
+    a {
+      font-size: 15px;
+      border: 1px solid black;
+      font-family: "Switzer", sans-serif;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+    }
+    p {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 50px;
+      color: #fcfcfc;
+    }
   }
 }
 
 // Grid section for 3 gategory cards
 
 section {
+  margin: 45px 0px;
   h3 {
     font-family: "Switzer", sans-serif;
     font-weight: 400;
   }
 }
 .categories {
-  margin: 18px 0px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 15px;
@@ -214,18 +207,17 @@ section {
   grid-auto-flow: column;
   gap: 15px;
 }
-.banners h3 {
-  font-family: "Switzer", sans-serif;
-  font-weight: 500;
+.banners {
+  margin: 45px 0px;
+  h3 {
+    font-family: "Switzer", sans-serif;
+    font-weight: 500;
+  }
 }
 .banner {
   position: relative;
   text-align: center;
   color: white;
-  // img{
-
-  //   filter: saturate(2%);
-  // }
 }
 .banner h3 {
   position: absolute;
@@ -399,5 +391,3 @@ label {
     }
   }
 }
-
-
