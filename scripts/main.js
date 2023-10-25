@@ -78,12 +78,12 @@ carousel.addEventListener('mouseover', dragStop)
 
 // pop up
 
-function handleClik() {
-  const timeout = setTimeout(() => {
-    document.getElementById('root').innerHTML = 'You clicked on this'
-  }, 1000);
+// function handleClik() {
+//   const timeout = setTimeout(() => {
+//     document.getElementById('root').innerHTML = 'You clicked on this'
+//   }, 1000);
 
-  setTimeout(() => {
-    document.getElementById('root').innerHTML = null
-  }, 3000);
-}
+//   setTimeout(() => {
+//     document.getElementById('root').innerHTML = null
+//   }, 3000);
+// }
